@@ -1,12 +1,10 @@
 # OSDCloud_Starter.ps1
 
 ## Overview
-- **Author**: Brooks Peppin
-- **Website**: www.brookspeppin.com
-- **Date Updated**: May 12, 2021
+- original Skript by Brooks Peppin
 
 ## SYNOPSIS
-Enables quick setup of the OSDCloud module by David Segura https://osdcloud.osdeploy.com/get-started. For complete functions and modules, please visit his site. And give him the credit for building OSDCloud!
+Enables quick setup of the OSDCloud module by David Segura https://osdcloud.osdeploy.com. For complete functions and modules, please visit his site. And give him the credit for building OSDCloud!
 
 ## PARAMETERS
 **–ADK**
