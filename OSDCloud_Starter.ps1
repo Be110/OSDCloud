@@ -15,6 +15,7 @@ param (
     [switch]$New,
     [switch]$BuildISO,
     $CustomURL,
+    [switch]$Wallpaper,
     [switch]$BuildUSB
 )
 
@@ -57,6 +58,10 @@ if($CustomURL){
 }
 if($BuildISO){
     New-OSDCloudISO
+}
+
+if($Wallpaper){
+    Edit-OSDCloudWinPE -Wallpaper $Wallpaper
 }
 
 if($BuildUSB){
