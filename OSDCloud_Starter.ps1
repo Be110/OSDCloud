@@ -10,7 +10,7 @@
 param (
     [switch]$ADK,
     [string]$workspace,
-    [ValidateSet('Dell', 'HP','Nutanix','VMware','Wifi')]
+    [ValidateSet('*','Dell','HP','IntelNet','LenovoDock','Nutanix','USB','VMware','Wifi')]
     $WinPEDrivers,
     [switch]$New,
     [switch]$BuildISO,
@@ -40,25 +40,25 @@ if($New){
     Install-Module OSD -Force
     
     Write-Host "Setting up OSDCloud template..."
-    New-OSDCloud.template -Verbose
+    New-OSDCloudTemplate -Verbose
 
 }
 if($workspace){
 
-    New-OSDCloud.workspace -WorkspacePath $workspace
+    New-OSDCloudWorkspace -WorkspacePath $workspace
 }
 
 if ($WinPEDrivers) {
-    Edit-OSDCloud.winpe -CloudDriver $WinPEDrivers
+    Edit-OSDCloudWinPE -CloudDriver $WinPEDrivers
 }
 
 if($CustomURL){
-    Edit-OSDCloud.winpe -WebPSScript $CustomURL 
+    Edit-OSDCloudWinPE -WebPSScript $CustomURL 
 }
 if($BuildISO){
-    New-OSDCloud.iso
+    New-OSDCloudISO
 }
 
 if($BuildUSB){
-    New-OSDCloud.usb
+    New-OSDCloudUSB
 }
