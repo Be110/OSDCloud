@@ -36,9 +36,9 @@ Parameter to build a new ISO
 Parameter to build a USB key
 
 ## EXAMPLE
-1. Installs ADK, sets the workspace to C:\OSDCloud, installs Dell drivers in WinPE and installs OSDCloud fresh
+1. Installs ADK, sets the workspace to C:\OSDCloud, installs all drivers (Dell,HP,IntelNet,LenovoDock,Nutanix,USB,VMware,WiFi) in WinPE and installs OSDCloud fresh
 
-.\OSDCloud_Starter.ps1 -ADK -Workspace C:\OSDCloud -WinPEDrivers Dell -New
+.\OSDCloud_Starter.ps1 -ADK -Workspace C:\OSDCloud -WinPEDrivers * -New
 
 2. Modifies an existing OSDCloud template to add in the custom URL
 
@@ -48,4 +48,7 @@ Parameter to build a USB key
 
 .\OSDCloud_Starter.ps1 -BuildUSB
 
+4. Change Wallpaper (https://www.osdcloud.com/setup/osdcloud-winpe)
+
+.\OSDCloud_Starter.ps1 -Wallpaper "C:\Source\Wallpaper.jpg"
 
