@@ -44,11 +44,11 @@ Parameter to build a USB key
 
 .\OSDCloud_Starter.ps1 -CustomURL https://raw.githubusercontent.com/Be110/OSDCloud/main/ZTI-OSDCloud.ps1 -BuildISO
 
-3. Builds a USB key
-
-.\OSDCloud_Starter.ps1 -BuildUSB
-
-4. Change Wallpaper (https://www.osdcloud.com/setup/osdcloud-winpe)
+3. Change Wallpaper (https://www.osdcloud.com/setup/osdcloud-winpe)
 
 .\OSDCloud_Starter.ps1 -Wallpaper "C:\Source\Wallpaper.jpg"
+
+4. Builds a USB key
+
+.\OSDCloud_Starter.ps1 -BuildUSB
 
