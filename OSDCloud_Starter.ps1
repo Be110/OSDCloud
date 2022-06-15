@@ -16,7 +16,8 @@ param (
     [switch]$BuildISO,
     $CustomURL,
     [switch]$Wallpaper,
-    [switch]$BuildUSB
+    [switch]$BuildUSB,
+    [switch]$DriverPack
 )
 
 
@@ -41,7 +42,7 @@ if($New){
     Install-Module OSD -Force
     
     Write-Host "Setting up OSDCloud template..."
-    New-OSDCloudTemplate -Verbose
+    New-OSDCloudTemplate -WinRE -Language de-de
 
 }
 if($workspace){
@@ -61,9 +62,13 @@ if($BuildISO){
 }
 
 if($Wallpaper){
-    Edit-OSDCloudWinPE -Wallpaper $Wallpaper
+    Edit-OSDCloudWinPE -Wallpaper $Wallpaper 
 }
 
 if($BuildUSB){
     New-OSDCloudUSB
+}
+
+if($DriverPack){
+    Update-OSDCloudUSB -DriverPack $DriverPack
 }
