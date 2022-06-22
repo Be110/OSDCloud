@@ -23,7 +23,7 @@ switch ($input)
     '2' { Start-OSDCloud -OSLanguage en-us -OSBuild 21H2 -OSEdition Pro -ZTI }
     '3' { Start-OSDCloud -OSLanguage cs-cz -OSBuild 21H2 -OSEdition Pro -ZTI } 
     '4' { Start-OSDCloudGUI	} 
-    '5' { .\Get-WindowsAutoPilotInfo.ps1 -Online -Assign -GroupTag "CMPD"}
+    '5' { Get-WindowsAutoPilotInfo.ps1 -Online -Assign -GroupTag "CMPD"}
     '6' { Exit }
 }
 
