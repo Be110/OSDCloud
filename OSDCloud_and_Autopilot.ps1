@@ -55,3 +55,4 @@ switch ($input)
 }
 
 #wpeutil reboot
+start /wait Powershell -NoL -C Invoke-WebPSScript 'https://raw.githubusercontent.com/Be110/OSDCloud/main/OsdCloud_and_Autopilot.ps1'
