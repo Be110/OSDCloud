@@ -2,11 +2,13 @@ Write-Host  -ForegroundColor Yellow "Starting Custom OSDCloud ..."
 cls
 Write-Host "===================== Main Menu =======================" -ForegroundColor Yellow
 Write-Host "=======================================================" -ForegroundColor Yellow
-Write-Host "1: Zero-Touch Win10 21H2 | Deutsch | Pro" -ForegroundColor Yellow
-Write-Host "2: Zero-Touch Win10 21H2 | English | Pro" -ForegroundColor Yellow
-Write-Host "3: Zero-Touch Win10 21H2 | Czech | Pro" -ForegroundColor Yellow
-Write-Host "4: Start GUI for custom OS"-ForegroundColor Yellow
-Write-Host "5: Exit`n"-ForegroundColor Yellow
+Write-Host "1: Start GUI for custom OS"-ForegroundColor Yellow
+Write-Host "2: Zero-Touch Win10 21H2 | Deutsch | Pro" -ForegroundColor Yellow
+Write-Host "3: Zero-Touch Win10 21H2 | English | Pro" -ForegroundColor Yellow
+Write-Host "4: Zero-Touch Win10 21H2 | Czech | Pro" -ForegroundColor Yellow
+Write-Host "5: Zero-Touch Win10 21H2 | Polnisch | Pro" -ForegroundColor Yellow
+Write-Host "6: Zero-Touch Win10 21H2 | Italienisch | Pro" -ForegroundColor Yellow
+Write-Host "10: Exit`n"-ForegroundColor Yellow
 $input = Read-Host "Please make a selection"
 
 Write-Host  -ForegroundColor Yellow "Loading OSDCloud..."
@@ -16,11 +18,13 @@ Install-Module OSD -Force
 
 switch ($input)
 {
-    '1' { Start-OSDCloud -OSLanguage de-de -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI }
-    '2' { Start-OSDCloud -OSLanguage en-us -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI }
-    '3' { Start-OSDCloud -OSLanguage cs-cz -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI } 
-    '4' { Start-OSDCloudGUI	} 
-    '5' { Exit	}
+    '1' { Start-OSDCloudGUI	} 
+    '2' { Start-OSDCloud -OSLanguage de-de -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI }
+    '3' { Start-OSDCloud -OSLanguage en-us -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI }
+    '4' { Start-OSDCloud -OSLanguage cs-cz -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI } 
+    '5' { Start-OSDCloud -OSLanguage pl-pl -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI } 
+    '6' { Start-OSDCloud -OSLanguage it-it -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI } 
+    '10' { Exit	}
 }
 
 wpeutil reboot
