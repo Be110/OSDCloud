@@ -3,11 +3,11 @@ cls
 Write-Host "===================== Main Menu =======================" -ForegroundColor Yellow
 Write-Host "=======================================================" -ForegroundColor Yellow
 Write-Host "1: Start GUI for custom OS"-ForegroundColor Yellow
-Write-Host "2: Zero-Touch Win10 21H2 | Deutsch | Pro" -ForegroundColor Yellow
+Write-Host "2: Zero-Touch Win10 21H2 | German | Pro" -ForegroundColor Yellow
 Write-Host "3: Zero-Touch Win10 21H2 | English | Pro" -ForegroundColor Yellow
 Write-Host "4: Zero-Touch Win10 21H2 | Czech | Pro" -ForegroundColor Yellow
-Write-Host "5: Zero-Touch Win10 21H2 | Polnisch | Pro" -ForegroundColor Yellow
-Write-Host "6: Zero-Touch Win10 21H2 | Italienisch | Pro" -ForegroundColor Yellow
+Write-Host "5: Zero-Touch Win10 21H2 | Polish | Pro" -ForegroundColor Yellow
+Write-Host "6: Zero-Touch Win10 21H2 | Italian | Pro" -ForegroundColor Yellow
 Write-Host "10: Exit`n"-ForegroundColor Yellow
 $input = Read-Host "Please make a selection"
 
