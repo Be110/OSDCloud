@@ -16,9 +16,9 @@ Install-Module OSD -Force
 
 switch ($input)
 {
-    '1' { Start-OSDCloud -OSLanguage de-de -OSBuild 21H2 -OSEdition Pro -ZTI }
-    '2' { Start-OSDCloud -OSLanguage en-us -OSBuild 21H2 -OSEdition Pro -ZTI }
-    '3' { Start-OSDCloud -OSLanguage cs-cz -OSBuild 21H2 -OSEdition Pro -ZTI } 
+    '1' { Start-OSDCloud -OSLanguage de-de -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI }
+    '2' { Start-OSDCloud -OSLanguage en-us -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI }
+    '3' { Start-OSDCloud -OSLanguage cs-cz -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI } 
     '4' { Start-OSDCloudGUI	} 
     '5' { Exit	}
 }
