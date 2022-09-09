@@ -19,11 +19,11 @@ Install-Module OSD -Force
 switch ($input)
 {
     '1' { Start-OSDCloudGUI	} 
-    '2' { Start-OSDCloud -OSLanguage de-de -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI }
-    '3' { Start-OSDCloud -OSLanguage en-us -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI }
-    '4' { Start-OSDCloud -OSLanguage cs-cz -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI } 
-    '5' { Start-OSDCloud -OSLanguage pl-pl -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI } 
-    '6' { Start-OSDCloud -OSLanguage it-it -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -ZTI } 
+    '2' { Start-OSDCloud -OSLanguage de-de -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -OSLicense Retail -ZTI }
+    '3' { Start-OSDCloud -OSLanguage en-us -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -OSLicense Retail -ZTI }
+    '4' { Start-OSDCloud -OSLanguage cs-cz -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -OSLicense Retail -ZTI } 
+    '5' { Start-OSDCloud -OSLanguage pl-pl -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -OSLicense Retail -ZTI } 
+    '6' { Start-OSDCloud -OSLanguage it-it -OSVersion "Windows 10" -OSBuild 21H2 -OSEdition Pro -OSLicense Retail -ZTI } 
     '10' { Exit	}
 }
 
