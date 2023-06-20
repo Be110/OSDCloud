@@ -17,9 +17,9 @@ Write-Host "10: Group Tag CMMUDPOL AutopilotJoin" -ForegroundColor Yellow
 Write-Host "=======================================================" -ForegroundColor Yellow
 Write-Host "===================== OS Install ======================" -ForegroundColor Yellow
 Write-Host "=======================================================" -ForegroundColor Yellow
-Write-Host "11: Zero-Touch Win10 21H2 | Deutsch | Enterprise" -ForegroundColor Yellow
-Write-Host "12: Zero-Touch Win10 21H2 | English | Enterprise" -ForegroundColor Yellow
-Write-Host "13: Zero-Touch Win10 21H2 | Czech | Enterprise" -ForegroundColor Yellow
+Write-Host "11: Zero-Touch Win10 22H2 | Deutsch | Enterprise" -ForegroundColor Yellow
+Write-Host "12: Zero-Touch Win10 22H2 | English | Enterprise" -ForegroundColor Yellow
+Write-Host "13: Zero-Touch Win10 22H2 | Czech | Enterprise" -ForegroundColor Yellow
 Write-Host "14: Start GUI for custom OS"-ForegroundColor Yellow
 Write-Host "=======================================================" -ForegroundColor Yellow
 Write-Host "======================== Exit =========================" -ForegroundColor Yellow
@@ -48,9 +48,9 @@ switch ($input)
 	'8' {Get-WindowsAutoPilotInfo.ps1 -Online -Assign -GroupTag "CMMUDLUX"}
 	'9' {Get-WindowsAutoPilotInfo.ps1 -Online -Assign -GroupTag "CMMUDNLD"}
     	'10' {Get-WindowsAutoPilotInfo.ps1 -Online -Assign -GroupTag "CMMUDPOL"}
-    	'11' {Start-OSDCloud -OSLanguage de-de -OSBuild 21H2 -OSEdition Pro -ZTI}
-    	'12' {Start-OSDCloud -OSLanguage en-us -OSBuild 21H2 -OSEdition Pro -ZTI}
-    	'13' {Start-OSDCloud -OSLanguage cs-cz -OSBuild 21H2 -OSEdition Pro -ZTI} 
+    	'11' {Start-OSDCloud -OSLanguage de-de -OSBuild 22H2 -OSEdition Pro -ZTI}
+    	'12' {Start-OSDCloud -OSLanguage en-us -OSBuild 22H2 -OSEdition Pro -ZTI}
+    	'13' {Start-OSDCloud -OSLanguage cs-cz -OSBuild 22H2 -OSEdition Pro -ZTI} 
 	'14' {Start-OSDCloudGU} 
 }
 
